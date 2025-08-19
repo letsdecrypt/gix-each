@@ -1,0 +1,11 @@
+[package]
+authors = ["Jonir Rings <i@jonirrings.com>"]
+name = "gix-each"
+version = "0.1.0"
+edition = "2024"
+description = "update all git repositories in subdirectories"
+
+[dependencies]
+clap = { version = "4.5.45", features = ["derive"] }
+gix = { version = "0.73.0", features = ["blocking-http-transport-reqwest-rust-tls"] }
+rayon = "1"
